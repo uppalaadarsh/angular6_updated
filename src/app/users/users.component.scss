@@ -1,0 +1,14 @@
+ul {
+    &.users_details {
+        li {
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background-color: #008eff !important; 
+                transition: all 0.3s ease-in-out;
+                a {
+                    color: #ffffff !important;;
+                }
+            }
+        }
+    }
+} 

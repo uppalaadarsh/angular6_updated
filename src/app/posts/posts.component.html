@@ -1,0 +1,37 @@
+<button (click)="toggle()" id="bt">
+    {{buttonName}}
+</button>
+
+<ng-container *ngIf="show",[@fadeInOut]>
+  <div class="popup_parent">
+    <div class="popupBox">
+      <h2 class="text-center">Be the first to know</h2>
+      <div>
+        <label>Email Address:</label>
+        <div><input id="tbname" name="yourname" placeholder="Email Address"/></div>
+      </div>
+      <div class="details">
+        <div class="gender">
+          <label>Gender</label>
+          <select name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+        <div class="dob">
+          <label>Date of Birth*</label>
+          <input type="date" name="DOB">
+        </div>
+      </div>
+      <section class="button-section">
+        <div class="button thank">
+          No Thanks
+        </div>
+        <div class="button signup thank">
+          signup
+        </div>
+      </section>
+    </div>
+  </div>
+</ng-container>
+
